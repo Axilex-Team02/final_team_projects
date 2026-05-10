@@ -1,13 +1,10 @@
-# Electrician Contractor Management System
-
-This project is a fully functional web application converting the Axilex CMS frontend into a dynamic full-stack system using Python, Flask, and SQLite.
-
-## Features
-- **Backend Setup**: Flask web framework implemented.
-- **Database**: SQLite database (`contractor.db`) structured with Users, Electricians, Jobs, and Tasks tables.
+- **Backend Setup**: Flask web framework implemented with modern routing and API endpoints.
+- **Database**: SQLite database (`contractor.db`) structured with Users, Electricians, Jobs, Tasks, and Notifications.
 - **User Authentication**: Secure user registration and login functionality using Werkzeug password hashing.
-- **Dynamic Dashboard**: Dashboard fetching live statistics about electricians, active jobs, and tasks from the database.
-- **Routing**: Clean API routing connecting `.html` templates correctly via Flask.
+- **Advanced Reporting**: Data-driven analytics dashboard with real-time charts powered by Chart.js.
+- **Search & Filter**: AJAX-ready search and multi-parameter filtering for electricians, jobs, and tasks.
+- **Notification System**: Real-time alerts for task assignments, completions, and deadline warnings.
+- **Premium UI/UX**: Professional "Glassmorphism" interface with custom HSL color palettes and Inter typography.
 
 ## How to Run the Project
 1. **Activate the Virtual Environment**:
@@ -33,11 +30,14 @@ This project is a fully functional web application converting the Axilex CMS fro
 5. **Open in Browser**:
    Open a web browser and go to `http://127.0.0.1:5000/`.
 
-## Requirements Checklist
 - [x] Backend Integration (Flask)
 - [x] Database Connected (contractor.db)
 - [x] Working Login and Registration
 - [x] Dynamic Dashboard (Fetching live stats)
+- [x] Reports Module (Chart.js visualization)
+- [x] Real-time Notifications system
+- [x] Search & Filter Functionality
+- [x] Premium CSS/UX Overhaul
 - [x] Code ready for GitHub push
 
 ## Pushing to GitHub

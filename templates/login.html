@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login - Axilex CMS</title>
+    <title>Login - Electrician Management</title>
     <link rel="stylesheet" href="/static/css/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -12,8 +12,8 @@
     <div class="auth-container">
         <div class="card auth-card">
             <div class="auth-header">
-                <a href="/" class="logo justify-center mb-2" style="font-size: 2rem;">
-                    <i class="fa-solid fa-bolt"></i> AXILEX
+                <a href="/" class="logo justify-center mb-2" style="font-size: 1.5rem; text-align: center; font-weight: 700;">
+                    Electrician Contractor Management System
                 </a>
                 <h2>Welcome Back</h2>
                 <p style="color: var(--text-light)">Sign in to your account</p>
@@ -39,6 +39,16 @@
                 
                 <button type="submit" class="btn btn-primary" style="width: 100%; padding: 0.75rem;">Log In</button>
             </form>
+            
+            {% with messages = get_flashed_messages(with_categories=true) %}
+              {% if messages %}
+                {% for category, message in messages %}
+                  <div class="flash-alert flash-{{ category }} mb-4" style="margin-bottom: 1rem;">
+                    {{ message }}
+                  </div>
+                {% endfor %}
+              {% endif %}
+            {% endwith %}
             
             <div class="auth-footer">
                 Don't have an account? <a href="/register" style="font-weight: 600;">Sign up</a>
